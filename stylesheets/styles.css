@@ -470,10 +470,16 @@ body {
   font-weight: 300;
   margin: 0px;
   padding: 0px 0 20px 0px; 
-  background-color: rgba(0,0,0,0.3);
 }
 
 body{
+	background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: "raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.top-area{
 	background-image: url(../images/background.jpg);
 	background-attachment: fixed;
     background-position: center top;
@@ -481,16 +487,12 @@ body{
     background-size: cover;
     display: block;
 }
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-	font-family: "raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 header{
 	color: #fff;
 }
 header h1{
 	margin: 0;
-	padding: 1.5em 5em;
+	padding: 1.5em 6em;
 	background-color: rgba(0,0,0,0.5);
 }
 nav{
@@ -507,9 +509,117 @@ nav a:hover{
 	text-decoration: underline;
 	cursor: pointer;	
 }
+.logo{
+	float: left;
+	margin: -8em 0 0 8em;
+	opacity: 0.9;
+}
+.banner h1{
+	padding: 3em 3.7em;
+	font-weight: bold;
+	color: #fff;
+	font-size: 2.6em;
+	margin: 0;
+	background-color: rgba(0,0,0,0.06);
+	
+}
+h1{
+	font-size: 2.6em;
+}
+article section{
+	padding: 3em 20em;
+	border-bottom: 1px solid #eee;
+}
+article section div:first-child{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+article div:last-child{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;	
+}
+article div:last-child img{
+	float: right;	
+}
+.sub-logo{
+	margin: 0;
+	padding: 30px;
+	background: #ff9001;
+	width: 260px;
+	height: 260px;
+	border-radius: 260px;
+}
+#involve .sub-logo{
+	background: #28a279;
+}
+#team .sub-logo{
+	background: #e81b5c;
+}
+#contact .sub-logo{
+	background: #2875bd;
+}
+h3{
+	line-height: 1.6em;
+}
 
 
 
+.jtkZoom
+{
+	transform-style: preserve-3d;
+	animation: jtkZoom 10s infinite;
+
+	-webkit-transform-style: preserve-3d;
+	-webkit-animation: jtkZoom 10s infinite;
+}
+
+@keyframes jtkZoom
+{
+	0%, 100%
+	{
+		transform: translateZ(0px);
+	}
+	50%
+	{
+		transform: translateZ(360px);
+	}
+}
+
+@-webkit-keyframes jtkZoom
+{
+	0%, 100%
+	{
+		-webkit-transform: translateZ(0px);
+	}
+	50%
+	{
+		-webkit-transform: translateZ(360px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	text-align: center;
+}
 
 @media print, screen and (max-width: 1060px) {
   div.wrapper {
